@@ -31,7 +31,7 @@
 </blockquote>
 <p><strong><span class = "sans">Proof of Lemma 1:</span></strong> The multiplication map is $\R$-bilinear and the Galois conjugation maps are $\R$-linear, so they are both smooth. The norm map $N$ can be obtained from composing these functions appropriately and restricting the codomain, so it is smooth. Finally, the inverse map can be written as:
 $$i(\alpha) = \frac{1}{N(\alpha)}\prod_{\sigma \in \mathrm{Gal}(\bb{K}/\bb{R})} \sigma(\alpha)$$
-and must hence be smooth. In particular, since $m: \bb{K}^{\times} \times \bb{K}^{\times} \to \bb{K}^{\times}$ and $i: \bb{K}^{\times} \to \bb{K}^{\times}$ are smooth, this makes $\bb{K}^{\times}$ a Lie group. $\square$</p>
+making it smooth. Given that $m: \bb{K}^{\times} \times \bb{K}^{\times} \to \bb{K}^{\times}$ and $i: \bb{K}^{\times} \to \bb{K}^{\times}$ are smooth, $\bb{K}^{\times}$ must be a Lie group. $\square$</p>
 <blockquote>
 <p><span class = "both">Lemma 2:</span> The squaring map $F: \bb{K}^{\times} \to \bb{K}^{\times}$, given by $\alpha \mapsto \alpha^2$, is open.</p>
 </blockquote>
@@ -40,7 +40,7 @@ and must hence be smooth. In particular, since $m: \bb{K}^{\times} \times \bb{K}
 <ul>
 <li><strong>Open</strong>: This is equivalent to saying that the image of a saturated open set under $F$ is also saturated and open. Indeed, such an image must be saturated since $F: \bb{R}^+ \to \bb{R}^+$ is surjective and must be open by Lemma 2.</li>
 <li><strong>Closed</strong>: This is because $\bb{K}^{\times}/\bb{R}^+ \cong S^{n-1}$ is compact Hausdorff.</li>
-<li><strong>Surjective</strong>: The image of $f$ is non-empty, open, and closed. Since $S^{n-1}$ is connected, the image must all of $S^{n-1}$.</li>
+<li><strong>Surjective</strong>: The image of $f$ is non-empty, open, and closed. Since $S^{n-1}$ is connected, the image must be  $S^{n-1}$.</li>
 <li><strong>$2$-to-$1$</strong>: The kernel of $f$ corresponds to elements of $\bb{K}^{\times}$ whose squares are elements of $\bb{R}^+$. These are precisely the elements of $\bb{R}^{\times}$, so $\ker f = \bb{R}^{\times}/\bb{R}^+ \cong \{\pm 1\}$.</li>
 </ul>
 <p>This means that the map $f: S^{n-1} \to S^{n-1}$ must be a double cover. However, for $n &gt; 2$, the space $S^{n-1}$ is simply-connected, so we have the required contradiction. $\square$</p>
