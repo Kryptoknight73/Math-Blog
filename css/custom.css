@@ -1,0 +1,92 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Soin+Sans+Pro:wght@400;700&display=swap');
+
+/* --------------------------- */
+/* Target only the site title */
+a.title {
+  display: block;       /* make block so it can be centered */
+  text-align: center;   /* center the title */
+  margin-bottom: 1rem;  /* optional spacing below */
+}
+
+a.title h1 {
+  font-family: 'Soin Sans Pro', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;            /* remove default margin */
+}
+
+/* --------------------------- */
+/* Change entire page background and body font */
+body {
+  background-color: #000000;
+  color: #ffffff; /* text color for contrast */
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+/* --------------------------- */
+/* Navigation bar */
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* spacing between items */
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* center the links */
+}
+
+.site-nav a {
+  color: #ffffff; /* white text for dark background */
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif; /* optional */
+}
+
+.site-nav a:hover {
+  color: #ff69b4; /* hover color */
+}
+
+nav.site-nav {
+  background-color: #1a1a1a;
+  padding: 1rem 0;
+  text-align: center;
+  border-radius: 0; /* remove rounded corners */
+}
+
+/* Highlighted text in pink */
+.highlight {
+    color: #ff69b4; /* pink color */
+}
+
+/* Title text */
+.sans {
+  font-family: 'Soin Sans Pro', sans-serif;
+}
+
+/* Title text */
+.both {
+  color: #ff69b4; /* pink color */
+  font-family: 'Soin Sans Pro', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Links inside blog posts or main content */
+main#main-content a {
+    color: #ff69b4;        /* pink links */
+    text-decoration: none;  /* optional: remove underline */
+}
+
+main#main-content a:hover {
+    color: #ff1493;         /* darker pink on hover */
+    text-decoration: underline; /* optional: underline on hover */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1.postTitle {
+    font-size: 1.65rem;  /* adjust to your preference */
+    color: #ff1493; 
+}

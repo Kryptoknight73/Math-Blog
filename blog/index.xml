@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Blog on The Unforgetful Functor</title>
+    <link>https://example.org/blog/</link>
+    <description>Recent content in Blog on The Unforgetful Functor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Proof of the Fundamental Theorem of Algebra</title>
+      <link>https://example.org/blog/algclosed/</link>
+      <pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://example.org/blog/algclosed/</guid>
+      <description>&lt;p&gt;In this blog post, I&#39;ll discuss a proof of the Fundamental Theorem of Algebra that I came up with about a year ago.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;span class = &#34;both&#34;&gt;The Fundamental Theorem of Arithmetic:&lt;/span&gt; $\bb{C}$ is an algebraically closed field.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;span class = &#34;sans&#34;&gt;Proof:&lt;/span&gt;&lt;/strong&gt; Assume that $\bb{C}$ is not algebraically closed. Consider any non-trivial finite extension $\bb{K}/\bb{C}$. The field extension $\bb{K}/\bb{R}$ has degree $n &amp;gt; 2$. We may assume that $\bb{K}/\bb{R}$ is Galois after replacing $\bb{K}$ with its Galois closure over $\bb{R}$. Endow $\bb{K}$ with the structure of a smooth $n$-manifold using its $\bb{R}$-vector space structure.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>In this blog post, I'll discuss a proof of the Fundamental Theorem of Algebra that I came up with about a year ago.</p>
+<blockquote>
+<p><span class = "both">The Fundamental Theorem of Arithmetic:</span> $\bb{C}$ is an algebraically closed field.</p>
+</blockquote>
+<p><strong><span class = "sans">Proof:</span></strong> Assume that $\bb{C}$ is not algebraically closed. Consider any non-trivial finite extension $\bb{K}/\bb{C}$. The field extension $\bb{K}/\bb{R}$ has degree $n &gt; 2$. We may assume that $\bb{K}/\bb{R}$ is Galois after replacing $\bb{K}$ with its Galois closure over $\bb{R}$. Endow $\bb{K}$ with the structure of a smooth $n$-manifold using its $\bb{R}$-vector space structure.</p>
+<blockquote>
+<p><span class = "both">Lemma 1:</span> The following maps are smooth:</p>
+<ul>
+<li>The multiplication map $m: \bb{K} \times \bb{K} \to \bb{K}$.</li>
+<li>The Galois conjugation maps $\sigma: \bb{K} \to \bb{K}$ for $\sigma \in \mathrm{Gal}(\bb{K}/\bb{R})$.</li>
+<li>The norm map $N: \bb{K} \to \bb{R}$.</li>
+<li>The inverse map $i: \bb{K}^{\times} \to \bb{K}^{\times}$.</li>
+</ul>
+<p>Thus, $\bb{K}^{\times}$ is a Lie group under the subspace topology.</p>
+</blockquote>
+<p><strong><span class = "sans">Proof of Lemma 1:</span></strong> The multiplication map is $\R$-bilinear and the Galois conjugation maps are $\R$-linear, so they are both smooth. The norm map $N$ can be obtained from composing these functions appropriately and restricting the codomain, so it is smooth. Finally, the inverse map can be written as:
+$$i(\alpha) = \frac{1}{N(\alpha)}\prod_{\sigma \in \mathrm{Gal}(\bb{K}/\bb{R})} \sigma(\alpha)$$
+and must hence be smooth. In particular, since $m: \bb{K}^{\times} \times \bb{K}^{\times} \to \bb{K}^{\times}$ and $i: \bb{K}^{\times} \to \bb{K}^{\times}$ are smooth, this makes $\bb{K}^{\times}$ a Lie group. $\square$</p>
+<blockquote>
+<p><span class = "both">Lemma 2:</span> The squaring map $F: \bb{K}^{\times} \to \bb{K}^{\times}$, given by $\alpha \mapsto \alpha^2$, is open.</p>
+</blockquote>
+<p><strong><span class = "sans">Proof of Lemma 2:</span></strong> By the inverse function theorem, it suffices to show that for any $\alpha \in \bb{K}^{\times}$, the map $dF_{\alpha}: \bb{K} \to \bb{K}$ is an isomorphism of $\R$-vector spaces. Indeed, the derivative of the map $F: \alpha \mapsto \alpha^2$ is simply $dF_{\alpha}: x \mapsto 2\alpha x$, which is indeed an isomorphism of $\R$-vector spaces. $\square$</p>
+<p>We now prove the Fundamental Theorem of Algebra. The homomorphism $F: \bb{K}^{\times} \to \bb{K}^{\times}$ induces a homomorphism $f: \bb{K}^{\times}/\bb{R}^+ \to \bb{K}^{\times}/\bb{R}^+$. We claim $f$ has the following properties:</p>
+<ul>
+<li><strong>Open</strong>: This is equivalent to saying that the image of a saturated open set under $F$ is also saturated and open. Indeed, such an image must be saturated since $F: \bb{R}^+ \to \bb{R}^+$ is surjective and must be open by Lemma 2.</li>
+<li><strong>Closed</strong>: This is because $\bb{K}^{\times}/\bb{R}^+ \cong S^{n-1}$ is compact Hausdorff.</li>
+<li><strong>Surjective</strong>: The image of $f$ is non-empty, open, and closed. Since $S^{n-1}$ is connected, the image must all of $S^{n-1}$.</li>
+<li><strong>$2$-to-$1$</strong>: The kernel of $f$ corresponds to elements of $\bb{K}^{\times}$ whose squares are elements of $\bb{R}^+$. These are precisely the elements of $\bb{R}^{\times}$, so $\ker f = \bb{R}^{\times}/\bb{R}^+ \cong \{\pm 1\}$.</li>
+</ul>
+<p>This means that the map $f: S^{n-1} \to S^{n-1}$ must be a double cover. However, for $n &gt; 2$, the space $S^{n-1}$ is simply-connected, so we have the required contradiction. $\square$</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
