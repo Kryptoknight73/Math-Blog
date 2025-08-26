@@ -1,5 +1,6 @@
 /* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Soin+Sans+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
 
 /* --------------------------- */
 /* Target only the site title */
@@ -21,7 +22,7 @@ a.title h1 {
 body {
   background-color: #000000;
   color: #ffffff; /* text color for contrast */
-  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  font-family: 'Comic Sans MS', 'Comic Neue', sans-serif;
 }
 
 /* Navigation bar container */
