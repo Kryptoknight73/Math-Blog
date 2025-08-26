@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/math-blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=math-blog/livereload" data-no-instant defer></script>
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,7 @@ Problem: A circle contains $n$ lights, with exactly one initially on. You are pe
 
 
   
-  <meta property="og:url" content="http://localhost:1313/blog/cyclotomiclights/">
+  <meta property="og:url" content="http://localhost:1313/math-blog/blog/cyclotomiclights/">
   <meta property="og:site_name" content="The Unforgetful Functor">
   <meta property="og:title" content="LED and GCD">
   <meta property="og:description" content="The following problem is from my university&#39;s Putnam Club problem set for this week. It was pulled from one of Northwestern&#39;s practice sets, where the problem is given without a source, but my friend Pramana and I suspect it to be an old classic problem.
@@ -51,7 +51,7 @@ Problem: A circle contains $n$ lights, with exactly one initially on. You are pe
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   
-  <link href="/original.min.css" rel="stylesheet">
+  <link href="../../math-blog/original.min.css" rel="stylesheet">
 
   
 
@@ -62,23 +62,18 @@ Problem: A circle contains $n$ lights, with exactly one initially on. You are pe
 
 <body>
   <header>
-<link rel="stylesheet" href="/css/custom.css">
+<link rel="stylesheet" href="../../css/custom.css">
 
 
-<a class="skip-link" href="#main-content">Skip to main content</a>
-
-
-<a href="/" class="title">
-    <h1>The Unforgetful Functor</h1>
-</a>
+<h1 class="title">The Unforgetful Functor</h1>
 
 
 <nav class="site-nav">
     <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/friends/">Friends</a></li>
-        <li><a href="http://localhost:1313/index.xml">RSS</a></li>
+        <li><a href="../../">Home</a></li>
+        <li><a href="../../blog/">Blog</a></li>
+        <li><a href="../../friends/">Friends</a></li>
+        <li><a href="../../index.xml">RSS</a></li>
     </ul>
 </nav>
 
@@ -97,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
     renderMathInElement(document.body, {
         delimiters: [
             {left: "$$", right: "$$", display: true},
-            {left: "\[", right: "\]", display: true},
+            {left: "\\[", right: "\\]", display: true},
             {left: "$", right: "$", display: false}
         ],
         macros: {
@@ -115,24 +110,28 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-</script></header>
+</script>
+</header>
   <main id="main-content">
-
-<h1 class="postTitle">LED and GCD</h1>
-
-
-
-<p class="byline">
-  <time datetime='2025-02-08' pubdate>
-    Feb 8, 2025
-  </time>
+<div class="content-container">
   
-</p>
+    <h1 class="postTitle">LED and GCD</h1>
 
+    
+    
+    
+    
+      <p class="byline">
+        <time datetime='2025-02-08' pubdate>
+          Feb 8, 2025
+        </time>
+        
+      </p>
+    
+  
 
-
-<content>
-  <p>The following problem is from my university's Putnam Club problem set for this week. It was pulled from one of Northwestern's practice sets, where the problem is given without a source, but my friend Pramana and I suspect it to be an old classic problem.</p>
+  <content>
+    <p>The following problem is from my university's Putnam Club problem set for this week. It was pulled from one of Northwestern's practice sets, where the problem is given without a source, but my friend Pramana and I suspect it to be an old classic problem.</p>
 <blockquote>
 <p><strong>Problem</strong>: A circle contains $n$ lights, with exactly one initially on. You are permitted to do the following: given any proper divisor $d$ of $n$, consider any $\tfrac{n}{d}$ lights arranged at regular intervals (every $d$th light). If they are all in the same state, you may swap all their states simultaneously. For which positive integers $n$ is it possible to turn all the lights off?</p>
 </blockquote>
@@ -183,15 +182,16 @@ Thus, the question reduces to proving that $\mathbb{F}_2[x]/I_n \neq 0$ for all 
 </ul>
 <p>Note that $B(s)$ only contains elements of strictly lower weight than $s$. We define the values of $x_s$ by induction on the weight of $s$. The weight $0$ case is already determined by $T'$. For positive weight $s$, define $x_s = \sum_{s' \in B(s)} x_{s'}$. We leave it as an exercise to the reader to see that this works! $\square$</p>
 
-</content>
+  </content>
 
-<p>
+  <p>
+    
+  </p>
+
   
-</p>
-
-
-
-
+    
+  
+</div>
 
   </main>
   <footer><small>

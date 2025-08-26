@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>The Unforgetful Functor</title>
-    <link>https://Kryptoknight73.github.io/math-blog/</link>
+    <link>http://localhost:1313/math-blog/</link>
     <description>Recent content on The Unforgetful Functor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://Kryptoknight73.github.io/math-blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/math-blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Proof of the Fundamental Theorem of Algebra</title>
-      <link>https://Kryptoknight73.github.io/math-blog/blog/algclosed/</link>
+      <link>http://localhost:1313/math-blog/blog/algclosed/</link>
       <pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://Kryptoknight73.github.io/math-blog/blog/algclosed/</guid>
-      <description>&lt;p&gt;In this blog post, I&#39;ll discuss a proof of the Fundamental Theorem of Algebra that I came up with about a year ago.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;span class = &#34;both&#34;&gt;The Fundamental Theorem of Arithmetic:&lt;/span&gt; $\bb{C}$ is an algebraically closed field.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;span class = &#34;sans&#34;&gt;Proof:&lt;/span&gt;&lt;/strong&gt; Assume that $\bb{C}$ is not algebraically closed. Consider any non-trivial finite extension $\bb{K}/\bb{C}$. The field extension $\bb{K}/\bb{R}$ has degree $n &amp;gt; 2$. We may assume that $\bb{K}/\bb{R}$ is Galois after replacing $\bb{K}$ with its Galois closure over $\bb{R}$. Endow $\bb{K}$ with the structure of a smooth $n$-manifold using its $\bb{R}$-vector space structure.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/math-blog/blog/algclosed/</guid>
+      <description>&lt;p&gt;In this blog post, I&#39;ll discuss a proof of the Fundamental Theorem of Algebra that I came up with about a year ago.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;span class = &#34;both&#34;&gt;The Fundamental Theorem of Algebra:&lt;/span&gt; $\bb{C}$ is an algebraically closed field.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;span class = &#34;sans&#34;&gt;Proof:&lt;/span&gt;&lt;/strong&gt; Assume that $\bb{C}$ is not algebraically closed. Consider any non-trivial finite extension $\bb{K}/\bb{C}$. The field extension $\bb{K}/\bb{R}$ has degree $n &amp;gt; 2$. We may assume that $\bb{K}/\bb{R}$ is Galois after replacing $\bb{K}$ with its Galois closure over $\bb{R}$. Endow $\bb{K}$ with the structure of a smooth $n$-manifold using its $\bb{R}$-vector space structure.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>In this blog post, I'll discuss a proof of the Fundamental Theorem of Algebra that I came up with about a year ago.</p>
 <blockquote>
-<p><span class = "both">The Fundamental Theorem of Arithmetic:</span> $\bb{C}$ is an algebraically closed field.</p>
+<p><span class = "both">The Fundamental Theorem of Algebra:</span> $\bb{C}$ is an algebraically closed field.</p>
 </blockquote>
 <p><strong><span class = "sans">Proof:</span></strong> Assume that $\bb{C}$ is not algebraically closed. Consider any non-trivial finite extension $\bb{K}/\bb{C}$. The field extension $\bb{K}/\bb{R}$ has degree $n &gt; 2$. We may assume that $\bb{K}/\bb{R}$ is Galois after replacing $\bb{K}$ with its Galois closure over $\bb{R}$. Endow $\bb{K}$ with the structure of a smooth $n$-manifold using its $\bb{R}$-vector space structure.</p>
 <blockquote>
@@ -48,9 +48,9 @@ and must hence be smooth. In particular, since $m: \bb{K}^{\times} \times \bb{K}
     </item>
     <item>
       <title>Friends</title>
-      <link>https://Kryptoknight73.github.io/math-blog/friends/</link>
+      <link>http://localhost:1313/math-blog/friends/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://Kryptoknight73.github.io/math-blog/friends/</guid>
+      <guid>http://localhost:1313/math-blog/friends/</guid>
       <description>&lt;h2 id=&#34;span-class--sansuw-madisonspan&#34;&gt;&lt;span class = &#34;sans&#34;&gt;UW Madison&lt;/span&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://pr4-kp.github.io/&#34;&gt;Pramana Saldin&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://asving.com/&#34;&gt;Asvin G&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sites.google.com/view/ruofanjiang/home&#34;&gt;Ruofan Jiang&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://people.math.wisc.edu/~wei78/&#34;&gt;Yifan Wei&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;span-class--sanspromysspan&#34;&gt;&lt;span class = &#34;sans&#34;&gt;PROMYS&lt;/span&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://franklin.dyer.me/&#34;&gt;Franklin Pezzuti Dyer&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
       <content:encoded><![CDATA[<h2 id="span-class--sansuw-madisonspan"><span class = "sans">UW Madison</span></h2>
 <ul>

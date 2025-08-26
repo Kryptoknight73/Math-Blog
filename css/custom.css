@@ -24,33 +24,39 @@ body {
   font-family: 'Comic Sans MS', 'Comic Sans', cursive;
 }
 
-/* --------------------------- */
-/* Navigation bar */
-.site-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem; /* spacing between items */
-  margin: 0;
-  padding: 0;
-  justify-content: center; /* center the links */
-}
-
-.site-nav a {
-  color: #ffffff; /* white text for dark background */
-  text-decoration: none;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif; /* optional */
-}
-
-.site-nav a:hover {
-  color: #ff69b4; /* hover color */
-}
-
+/* Navigation bar container */
 nav.site-nav {
-  background-color: #1a1a1a;
-  padding: 1rem 0;
-  text-align: center;
-  border-radius: 0; /* remove rounded corners */
+    max-width: 900px;            /* same width as content-container */
+    margin: 1rem auto;            /* center horizontally and add spacing above/below */
+    background-color: #1a1a1a;    /* same as previous nav bar background */
+    border-radius: 8px;           /* soft corners like blockquotes */
+    border: 2px solid #ff69b4;        /* pink outline */
+    border-radius: 8px;               /* soft corners like blockquotes */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08); /* subtle shadow */
+    padding: 0.5rem 1rem;
+}
+
+/* Remove default ul styling and center items */
+nav.site-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* center links horizontally */
+    gap: 2rem;               /* spacing between links */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation links */
+nav.site-nav a {
+    color: #ffffff;          /* pink links */
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Soin Sans Pro', sans-serif;
+}
+
+/* Hover effect */
+nav.site-nav a:hover {
+    color: #ff69b4;          /* white on hover for contrast */
 }
 
 /* Highlighted text in pink */
@@ -88,5 +94,48 @@ h1, h2, h3, h4, h5, h6 {
 
 h1.postTitle {
     font-size: 1.65rem;  /* adjust to your preference */
-    color: #ff1493; 
+}
+
+.content-container {
+    max-width: 875px;   /* adjust as desired */
+    margin: 2rem auto;  /* top/bottom margin and center horizontally */
+    padding: 0 1rem;    /* optional: horizontal padding */
+}
+
+p {
+  text-align: justify;
+}
+
+.front-image {
+  max-width: 70%;   /* shrink to 60% of container width */
+  height: auto;     /* keep aspect ratio */
+  display: block;   /* remove inline spacing */
+  margin: 2rem auto; /* center horizontally with top/bottom space */
+  border-radius: 8px; /* optional rounded corners */
+}
+
+blockquote {
+  border-left: 4px solid #ff69b4;   /* pink border */
+  background: #1a1a1a;              /* light pink background */
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;               /* soft corners */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08); /* subtle shadow */
+}
+
+blockquote p {
+  margin: 0;  /* remove default extra spacing */
+}
+
+header h1.title, h1.title {
+  display: block;         /* ensures block-level */
+  text-align: center;     /* center text */
+  font-family: 'Soin Sans Pro', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+a.skip-link {
+    display: none !important;
 }
