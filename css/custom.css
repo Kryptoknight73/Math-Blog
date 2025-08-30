@@ -140,3 +140,13 @@ header h1.title, h1.title {
 a.skip-link {
     display: none !important;
 }
+
+.blog-posts li {
+  display: flex;
+  align-items: center;
+  gap: 20px;  /* controls spacing between date and title */
+}
+
+.blog-posts li time {
+  color: #ffffff; /* optional: make dates a bit lighter */
+}
