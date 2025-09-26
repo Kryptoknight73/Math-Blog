@@ -1,0 +1,19 @@
+baseURL = "https://Kryptoknight73.github.io/math-blog/"
+relativeURLs = true
+canonifyURLs = true
+
+languageCode = "en-us"
+title = "The Unforgetful Functor"
+theme = "hugo-bearcub"
+
+[params]
+  customCSS = ["css/custom.css"]
+  dateFormat = "Jan 02, 2006"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[markup.goldmark.extensions]
+  typographer = false
