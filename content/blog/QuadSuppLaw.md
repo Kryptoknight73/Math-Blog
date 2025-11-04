@@ -16,4 +16,4 @@ We recall the law of quadratic reciprocity over $\mathbb{Q}$.
 
 The goal of this article will be to understand the mysterious quantity $\tfrac{p^2-1}{8}$ which shows up in the second supplementary law. We begin by understanding the first law of quadratic reciprocity:
 
-<span class = "both">Proof of the First Supplementary Law:</span> 
+<span class = "both">Proof of the First Supplementary Law:</span>    
