@@ -1,0 +1,43 @@
+<!-- Load custom CSS -->
+<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+
+<!-- Site title -->
+<h1 class="title">{{ .Site.Title }}</h1>
+
+<!-- Navigation bar -->
+<nav class="site-nav">
+    <ul>
+        <li><a href="{{ "/" | relURL }}">Home</a></li>
+        <li><a href="{{ "blog/" | relURL }}">Blog</a></li>
+        <li><a href="{{ "friends/" | relURL }}">Friends</a></li>
+        <li><a href="{{ "index.xml" | relURL }}">RSS</a></li>
+    </ul>
+</nav>
+
+<!-- Math rendering -->
+{{ if .Params.math }}{{ partial "helpers/katex.html" . }}{{ end }}
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "\\[", right: "\\]", display: true},
+            {left: "$", right: "$", display: false}
+        ],
+        macros: {
+            "\\bb": "\\mathbb{#1}"
+        }
+    });
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('small').forEach(el => {
+    if (el.childElementCount === 0 && el.textContent.trim() === '|') {
+      el.remove(); // or: el.style.display = 'none';
+    }
+  });
+});
+</script>

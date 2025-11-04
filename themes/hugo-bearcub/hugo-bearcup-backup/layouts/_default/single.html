@@ -1,0 +1,41 @@
+{{ define "main" }}
+<div class="content-container">
+  {{ if not .Params.menu }}
+    <h1 class="postTitle">{{ .Title }}</h1>
+
+    {{/* Only show date if showDate is missing or true */}}
+    {{ $showDate := true }}
+    {{ if isset .Params "showDate" }}
+      {{ $showDate = .Params.showDate }}
+    {{ end }}
+    {{ if $showDate }}
+      <p class="byline">
+        <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
+          {{ .Date.Format "Jan 02, 2006" }}
+        </time>
+        {{ with .Params.author }}· {{ . }}{{ end }}
+      </p>
+    {{ end }}
+  {{ end }}
+
+  <content>
+    {{ .Content }}
+  </content>
+
+  <p>
+    {{ range (.GetTerms "tags") }}
+      <a class="blog-tags" href="{{ .RelPermalink }}">#{{ lower .LinkTitle }}</a>
+    {{ end }}
+  </p>
+
+  {{ if not .Params.hideReply }}
+    {{ with .Site.Params.author.email }}
+      <p>
+        <a href='mailto:{{ . }}?subject={{ i18n "email-subject" }}"{{ default $.Site.Title $.Page.Title }}"'>
+          {{ i18n "email-reply" }} ↪
+        </a>
+      </p>
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}
