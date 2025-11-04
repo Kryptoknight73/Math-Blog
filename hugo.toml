@@ -17,3 +17,7 @@ theme = "hugo-bearcub"
 
 [markup.goldmark.extensions]
   typographer = false
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
