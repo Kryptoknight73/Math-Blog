@@ -1,3 +1,19 @@
 <!-- A partial to be overwritten by the user.
   Simply place a custom_head.html into
   your local /layouts/partials-directory -->
+<style>
+  /* Target the list items on your index page */
+  .blog-list li, 
+  ul li {
+    display: flex;
+    gap: 1.5rem; /* Creates a clean, uniform space between date and title */
+    align-items: baseline; /* Ensures the text sits on the same invisible line */
+  }
+
+  /* Force the date to take up a specific amount of space */
+  ul li time, 
+  ul li .date {
+    min-width: 130px; /* You can increase/decrease this number if needed */
+    flex-shrink: 0; /* Prevents the date from getting squished on mobile screens */
+  }
+</style>

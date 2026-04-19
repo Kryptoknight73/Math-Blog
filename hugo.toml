@@ -14,9 +14,15 @@ theme = "hugo-bearcub"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+      
 
 [markup.goldmark.extensions]
   typographer = false
+  [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)'], ['$', '$']]
 
 [caches]
   [caches.images]
