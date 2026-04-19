@@ -56,7 +56,7 @@ $$\text{$\sqrt{2} \in \mathbb{F}_p$} \iff \text{$\zeta_{16} \in \mathbb{F}_{p^2}
 
 We look at the corresponding extensions of residue fields at $p$ by analyzing inertial degrees.
 - $(\Rightarrow)$ Assume that $f(\mathbb{Q}(\sqrt{2})/\mathbb{Q}) = 1$. Since $\mathbb{Q}(\zeta_{16})/\mathbb{Q}(\sqrt{2})$ is a composite of quadratic extensions, we have $f(\mathbb{Q}(\zeta_{16})/\mathbb{Q}(\sqrt{2})) \leqslant 2$, so it follows that $f(\mathbb{Q}(\zeta_{16})/\mathbb{Q}) \leqslant 2 \cdot 1 = 2$.
-- $(\Leftarrow)$ On the other hand, say that $f(\mathbb{Q}(\zeta_{16}))/f(\mathbb{Q}) = 2$. We see that $f(\mathbb{Q}(\sqrt{2+\sqrt{2}})/\mathbb{Q}) \leqslant 2$. Since this is a cyclic extension, we must have $f(\mathbb{Q}(\sqrt{2})/\mathbb{Q}) = 1$ (otherwise, Galois theory would force the extension to cyclic extension to have full inertia).
+- $(\Leftarrow)$ On the other hand, say that $f(\mathbb{Q}(\zeta_{16}))/f(\mathbb{Q}) = 2$. We see that $f(\mathbb{Q}(\sqrt{2+\sqrt{2}})/\mathbb{Q}) \leqslant 2$. Since this is a cyclic extension, we must have $f(\mathbb{Q}(\sqrt{2})/\mathbb{Q}) = 1$ (otherwise, Galois theory would imply $\mathbb{Q}(\sqrt{2+\sqrt{2}})/\mathbb{Q}$ has decomposition field $\mathbb{Q}$, and hence, inertial degree $4$).
 
 We conclude that $\sqrt{2} \in \mathbb{F}_p$ if and only if $\zeta_{16} \in \mathbb{F}_{p^2}$. $\square$
 
