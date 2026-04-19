@@ -1,5 +1,5 @@
 +++
-title = 'A new proof for $\bar{\mathbb{C}} = \mathbb{C}$'
+title = 'A New Proof that $\bar{\mathbb{C}} = \mathbb{C}$'
 date = 2025-08-25
 math = true
 +++
